@@ -224,11 +224,11 @@ footer {
 #lead {
   position: relative;
   height: 100vh;
-  min-height: 500px;
-  max-height: 700px;
+  min-height: 400px;
+  max-height: 600px;
   background: url(../assets/boston.jpg);
   background-size: cover;
-  padding: 15px;
+  padding: 10px;
   overflow: hidden;
 }
 #lead-content {
