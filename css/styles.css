@@ -486,16 +486,18 @@ footer {
 
 .project-image {
   flex: 1;
-  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
   padding: 5px;
+  overflow: hidden;
 }
 
 .project-image img {
-  width: 100%; /* Ensure the image takes up the full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  display: block;
+  max-width: 100%; /* Ensure the image fits the container's width */
+  max-height: 100%; /* Ensure the image fits within the container's height */
+  object-fit: contain; /* Ensure the aspect ratio is maintained */
 }
-
 .project-info {
   flex: 1; /* Adjust the size of the info section */
   padding: 15px;
