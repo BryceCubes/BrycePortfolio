@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bryce Portfolio</title>
-    <link rel="shortcut icon" href="./assets/map.png" type="image/x-icon" />
-    <link rel="icon" href="./assets/map.png" />
+    <title>Bryce Russell-Benoit</title>
+    <link rel="shortcut icon" href="./assets/mass.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/mass.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
       rel="stylesheet"
@@ -146,7 +146,7 @@
           <h4>Research Assistant</h4>
           <ul>
             <li>
-              Lead development and maintenance of code base for the BARI
+              Leading development and maintenance of code base for the BARI
               Multi-Hazard project.
             </li>
             <li>
@@ -155,7 +155,7 @@
               estimate air pollution exposure risk.
             </li>
             <li>
-              Created multi-level models to examine the impact of local and
+              Created mixed-effects models to examine the impact of local and
               regional factors on heat and air pollution to identify policy
               levers.
             </li>
@@ -221,9 +221,26 @@
             <div class="project-info">
               <h3>Multi-Hazard MAPC</h3>
               <p>
-                The purpose of this research was to examine the street-by-street
-                effects of heat and air pollution which will become increasingly
-                relevant as climate change marches on. This study is a regional
+                As climate change continues to progress, our communities need to
+                be ready to handle the heat. We wanted to investigate what kinds
+                of policy could be effective at keeping streets cool across the
+                greater Boston area. I used a variety of sources to combine
+                streets, parcels, land use, heat, land cover, emissions, and
+                more into a comprehensive dataset for analysis. I compared how
+                average land surface temperature and carbon monoxide emissions
+                correlate with this map on the left.
+              </p>
+              <p>
+                However, this map demonstrates the inadequacy of using census
+                tracts at a regional scale. A single highway will paint a low
+                density tract as a high pollution risk for residents. Nearby air
+                or heat pollution are significant, but the population-based
+                census tract size makes it a poor tool for studying regional
+                effects consistently.
+              </p>
+              <p>
+                The purpose of my research is to examine the street-by-street
+                effects and drivers of heat and air pollution as a regional
                 expansion of work from
                 <a
                   href="https://www.mdpi.com/2071-1050/15/4/2984"
@@ -231,8 +248,8 @@
                 >
                   OBrien & Mueller
                 </a>
-                on Boston, but the wider area required a very different
-                approach.
+                which found a large portion of variability in heat and air
+                pollution occured within neighborhoods in Boston.
               </p>
             </div>
             <!-- End .project-info -->
@@ -261,12 +278,12 @@
               </p>
               <p>
                 I used MassGIS data on roads and grocery stores to examine the
-                state of food deserts in Boston. I used the road data to create
-                a network in ArcGIS with a time cost for traversal based on the
-                average walking speed of a middle-aged adult. I could then use
-                grocery stores and MBTA stations as nodes to create service
-                areas to analyze where the gaps are and how connected grocery
-                stores are to the rapid transit network.
+                state of food deserts in Boston. The road data was leveraged to
+                create a network in ArcGIS with a time cost for traversal based
+                on the average walking speed of a middle-aged adult. I could
+                then use grocery stores and MBTA stations as nodes to create
+                service areas to analyze where the gaps are and how connected
+                grocery stores are to the rapid transit network.
               </p>
               <p>
                 The results were pretty encouraging for the state of Boston food
@@ -278,7 +295,7 @@
               </p>
               <p>
                 Click the link below to view my presentation with the rest of
-                the resulting maps:
+                the analysis and more maps:
               </p>
               <a
                 href="./assets/Boston Food Deserts and Transit Presentation.pdf"
@@ -310,8 +327,23 @@
                 take them anywhere.
               </p>
               <p>
-                This led me to investigate who was using BlueBikes, especially
-                as a commuting tool.
+                This led me to investigate which demographics were using
+                BlueBikes. BlueBikes releases anonymized data about trips taken
+                each month. By focusing in on commuters using rush hour spikes,
+                I could find riders' "home" station with some caveats. I then
+                combined BlueBikes ride data with several kinds of Census data
+                to create a linear model.
+              </p>
+              <p>
+                The resulting model found a significant relationship with
+                Income, GINI (Inequality Measure), and the population proportion
+                Ages 18-34. This affirmed BlueBikes' popularity among college
+                students and hinted at an economic barrier to BlueBikes usage.
+              </p>
+              <p>
+                The outcome of this project was a guided lesson intended to
+                demonstrate how to extract insights from open data sources.
+                Check out the lesson here:
               </p>
               <a href="./assets/BlueBikes Lesson.pdf" target="_blank"
                 >BlueBikes Guided Lesson</a
