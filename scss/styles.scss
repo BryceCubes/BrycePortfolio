@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #5c8d56;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -958,7 +958,7 @@ footer {
         }
     }
 
-    .project-image {
+    .project-carousel {
         display: none;
     }
 
@@ -968,6 +968,7 @@ footer {
         padding: 30px 15px;
         top: auto;
         transform: none;
+        max-width: 100%;
     }
 
     footer {

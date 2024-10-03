@@ -322,11 +322,11 @@ footer {
   border-bottom: 1px solid #dcd9d9;
 }
 #experience h2 {
-  color: #3e5437
+  color: #3e5437;
 }
 
 #experience ul {
-  color: #4d4f4f
+  color: #4d4f4f;
 }
 
 #experience-timeline {
@@ -383,10 +383,10 @@ footer {
   margin: 0;
 }
 .vtimeline-content ul {
-    color: #74808a;
-    font-size: 0.9em;
-    margin: 0;
-  }
+  color: #74808a;
+  font-size: 0.9em;
+  margin: 0;
+}
 .vtimeline-point {
   position: relative;
   display: block;
@@ -469,28 +469,111 @@ footer {
   text-align: center;
 }
 
-#projects h2 {
-  color: #3e5437;
-  margin-bottom: 50px;
-}
-
 .project {
-  display: flex; /* Use Flexbox for layout */
+  display: flex;
   max-width: 1200px;
   margin: 0 auto 30px auto;
-  overflow: hidden;
   background: #fff;
   border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: add some shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 600px;
 }
 
-.project-image {
+.project-carousel {
   flex: 1;
   display: flex;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
-  overflow: hidden;
+  max-width: 50%;
+  position: relative;
+}
+
+.project-info {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.mySlides img {
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+/* Dots container now inside carousel */
+.dot-container {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%; /* Ensures the dots align with the carousel width */
+  position: absolute;
+  bottom: 10px; /* Positioned below the carousel */
+}
+
+/* Navigation buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  transition: 0.6s ease;
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+  border-radius: 50%;
+  user-select: none;
+  z-index: 1;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+/* Using Font Awesome icons */
+.prev i,
+.next i {
+  font-size: 24px; /* Customize size */
+  color: #33333328;
+}
+
+.prev:hover i,
+.next:hover i {
+  color: rgb(65, 65, 65);
+}
+
+/* Dots styling */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .project-image img {
@@ -515,6 +598,7 @@ footer {
   color: #4d4f4f;
   margin: 0 0 15px 0;
   font-size: 0.9em;
+  vertical-align: middle ;
 }
 
 .no-image .project-info {
@@ -570,7 +654,8 @@ footer {
   gap: px; /* Adjust spacing between columns */
 }
 
-.contact-left, .contact-right {
+.contact-left,
+.contact-right {
   flex: 1;
   max-width: 400px; /* Optional: adjust as needed */
   color: #fff;
@@ -768,15 +853,21 @@ footer {
   .education-block span {
     float: none;
   }
-  .project-image {
-    display: none;
+  .project {
+    flex-direction: column;
   }
+  
+  .project-carousel {
+    max-width: 100%;
+    padding: 10px
+}
   .project-info {
     position: relative;
     margin: 0;
     padding: 30px 15px;
     top: auto;
     transform: none;
+    max-width: 100%;
   }
   footer {
     text-align: center;

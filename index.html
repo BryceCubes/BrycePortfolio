@@ -80,8 +80,8 @@
               Northeastern University and a research assistant at the Boston
               Area Research Initiative (BARI). My current research focuses on
               identifying policy levers to alleviate heat and air pollution in
-              the greater Boston area by examining potential causes at a
-              regional level.
+              the greater Boston area by examining potential causes and effects
+              at a regional level.
 
               <br /><br />
 
@@ -213,13 +213,36 @@
       <h2 class="heading">Projects</h2>
       <div class="container">
         <div class="row">
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img src="./assets/heat-ap-map.jpg" alt="Heat Map" />
+          <div id="Multi-Hazard" class="project shadow-large">
+            <div id="carousel1" class="project-carousel">
+              <div class="mySlides fade">
+                <img
+                  src="./assets/heat-ap-map.jpg"
+                  alt="Map of eastern Massachusetts showing how heat and air pollution intersect"
+                />
+              </div>
+              <div class="mySlides fade">
+                <img
+                  src="./assets/town_heat_dev.jpg"
+                  alt="Graph showing which towns are warmer or cooler than the mean street temperature"
+                />
+              </div>
+              <!-- Next and previous buttons with Font Awesome -->
+              <a class="prev" onclick="plusSlides(-1, 1)">
+                <i class="fa fa-chevron-left"></i>
+              </a>
+              <a class="next" onclick="plusSlides(1, 1)">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+              <!-- The dots/circles within the carousel -->
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1, 1)"></span>
+                <span class="dot" onclick="currentSlide(2, 1)"></span>
+              </div>
             </div>
-            <!-- End .project-image -->
+            <!-- End .project-carousel -->
             <div class="project-info">
-              <h3>Multi-Hazard MAPC</h3>
+              <h3>MAPC Multi-Hazard Research</h3>
               <p>
                 As climate change continues to progress, our communities need to
                 be ready to handle the heat. We wanted to investigate what kinds
@@ -232,9 +255,9 @@
               </p>
               <p>
                 However, this map demonstrates the inadequacy of using census
-                tracts at a regional scale. A single highway will paint a low
-                density tract as a high pollution risk for residents. Nearby air
-                or heat pollution are significant, but the population-based
+                tracts at a regional scale. A single highway will paint a
+                low-density tract as a high pollution risk for residents. Nearby
+                air or heat pollution are significant, but the population-based
                 census tract size makes it a poor tool for studying regional
                 effects consistently.
               </p>
@@ -249,25 +272,45 @@
                   OBrien & Mueller
                 </a>
                 which found a large portion of variability in heat and air
-                pollution occured within neighborhoods in Boston.
+                pollution occurred  within neighborhoods in Boston.
               </p>
             </div>
             <!-- End .project-info -->
           </div>
           <!-- End .project -->
 
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img
-                src="./assets/grocery-service-area.jpg"
-                alt="Shows the service area of MBTA rapid transit stations and grocery stores within walking range"
-              />
+          <div id="Food Desert" class="project shadow-large">
+            <div id="carousel2" class="project-carousel">
+              <div class="mySlides fade">
+                <img
+                  src="./assets/grocery-service-area.jpg"
+                  alt="Map showing which parts of Boston are within a 20 minute walk of a grocery store"
+                />
+              </div>
+              <div class="mySlides fade">
+                <img
+                  src="./assets/grocery-transit.jpg"
+                  alt="Map showing which parts of Boston are within a 15 minute walk to a T station"
+                />
+              </div>
+              <!-- Next and previous buttons with Font Awesome -->
+              <a class="prev" onclick="plusSlides(-1, 2)">
+                <i class="fa fa-chevron-left"></i>
+              </a>
+              <a class="next" onclick="plusSlides(1, 2)">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+              <!-- The dots/circles within the carousel -->
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1, 2)"></span>
+                <span class="dot" onclick="currentSlide(2, 2)"></span>
+              </div>
             </div>
-            <!-- End .project-image -->
+            <!-- End .project-carousel -->
             <div class="project-info">
-              <h3>Food Deserts and Mobility</h3>
+              <h3>Boston Food Desert Study</h3>
               <p>
-                I currently live in a part of the city that is about a 20 minute
+                I currently live in a part of the city that is about a 20-minute
                 walk away from the nearest grocery store. This combined with the
                 lack of tree canopy on that walk led me to use the MBTA rapid
                 transit system to take the train to a grocery store located very
@@ -287,8 +330,8 @@
               </p>
               <p>
                 The results were pretty encouraging for the state of Boston food
-                access. The vast majority of Boston residents live within a 20
-                minute walk of a grocery store, and most of the gaps were in
+                access. The vast majority of Boston residents live within a
+                20-minute walk of a grocery store, and most of the gaps were in
                 unpopulated areas such as parks or the airport. However, the
                 gaps that did exist should be considered when planning new bus
                 routes and transit expansions where they are not already served.
@@ -300,20 +343,41 @@
               <a
                 href="./assets/Boston Food Deserts and Transit Presentation.pdf"
                 target="_blank"
-                >Project Presentation</a
-              >
+                >Project Presentation
+              </a>
             </div>
             <!-- End .project-info -->
           </div>
           <!-- End .project -->
 
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img src="./assets/trips-started.jpg" alt="BlueBikes Graph" />
+          <div id="BlueBikes" class="project shadow-large">
+            <div id="carousel3" class="project-carousel">
+              <div class="mySlides fade">
+                <img
+                  src="./assets/bike-hours.png"
+                  alt="Graph showing the amount of bluebikes trips that started at each hour of the day by user type"
+                />
+              </div>
+              <div class="mySlides fade">
+                <img src="./assets/trips-started.jpg" alt="TODO" />
+              </div>
+              <!-- Next and previous buttons with Font Awesome -->
+              <a class="prev" onclick="plusSlides(-1, 3)">
+                <i class="fa fa-chevron-left"></i>
+              </a>
+              <a class="next" onclick="plusSlides(1, 3)">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+              <!-- The dots/circles within the carousel -->
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1, 3)"></span>
+                <span class="dot" onclick="currentSlide(2, 3)"></span>
+              </div>
             </div>
-            <!-- End .project-image -->
+            <!-- End .project-carousel -->
+
             <div class="project-info">
-              <h3>BlueBikes Equity</h3>
+              <h3>BlueBikes Equity Analysis</h3>
               <p>
                 BlueBikes has been a resounding success of a program. Ridership
                 numbers have increased consistently, even through the pandemic.
@@ -339,7 +403,7 @@
                 Income, GINI (Inequality Measure), and the population proportion
                 Ages 18-34. This affirmed BlueBikes' popularity among college
                 students and hinted at an economic barrier to BlueBikes usage.
-                This study was done before the significant price decrease for 
+                This study was done before the significant price decrease for
                 income-eligible Boston residents, and the network of stations
                 and bike lanes has only continued to expand. I hope these
                 programs will continue to encourage wider adoption.
