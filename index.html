@@ -77,7 +77,7 @@
           <div class="col-md-8">
             <p>
               I am a candidate for a Master of Science in Urban Informatics at
-              Northeastern University and a research assistant at the Boston
+              Northeastern University and a Research Assistant at the Boston
               Area Research Initiative (BARI). My current research focuses on
               identifying policy levers to alleviate heat and air pollution in
               the greater Boston area by examining potential causes and effects
@@ -88,7 +88,7 @@
               I grew up in Chelmsford, Massachusetts and I've been a proud
               Boston resident since 2017. My goal is to help Massachusetts
               become a more equitable and efficient place for all its residents.
-              While most of my work is focused the environment and
+              While most of my work is focused on the environment and
               transportation, I'm interested in all topics related to urban
               planning and municipal operations.
             </p>
@@ -146,18 +146,18 @@
           <h4>Research Assistant</h4>
           <ul>
             <li>
-              Leading development and maintenance of code base for the BARI
-              Multi-Hazard project.
+              Leads development and maintenance of code base to assess local
+              disparities in climate resilience and identify drivers and policy
+              levers.
+            </li>
+            <li>
+              Creates multi-level models to examine the impact of local and
+              regional factors on heat and air pollution.
             </li>
             <li>
               Developed method for approximating street width using structure
-              data that I used to categorize fluid dynamics behavior and
-              estimate air pollution exposure risk.
-            </li>
-            <li>
-              Created mixed-effects models to examine the impact of local and
-              regional factors on heat and air pollution to identify policy
-              levers.
+              data to categorize the air flushing regime and estimate air
+              pollution exposure risk.
             </li>
           </ul>
         </div>
@@ -172,7 +172,7 @@
               identify trends in customer behavior.
             </li>
             <li>
-              Developed several applications using VBA for excel to accept and
+              Developed several applications using VBA for Excel to accept and
               process input from business users that would then enter an ETL
               pipeline.
             </li>
@@ -250,26 +250,10 @@
               <h3>MAPC Multi-Hazard Research</h3>
               <p>
                 As climate change continues to progress, our communities need to
-                be ready to handle the heat. We wanted to investigate what kinds
-                of policy could be effective at keeping streets cool across the
-                greater Boston area. I used a variety of sources to combine
-                streets, parcels, land use, heat, land cover, emissions, and
-                more into a comprehensive dataset for analysis. I compared how
-                average land surface temperature and carbon monoxide emissions
-                correlate with this map on the left.
-              </p>
-              <p>
-                However, this map demonstrates the inadequacy of using census
-                tracts at a regional scale. A single highway will paint a
-                low-density tract as a high pollution risk for residents. Nearby
-                air or heat pollution are significant, but the population-based
-                census tract size makes it a poor tool for studying regional
-                effects consistently.
-              </p>
-              <p>
-                The purpose of my research is to examine the street-by-street
-                effects and drivers of heat and air pollution as a regional
-                expansion of work from
+                be ready to handle the heat. BARI wanted to investigate what
+                kinds of policy could be effective at keeping streets cool and
+                clean across the greater Boston area. This research began as a
+                regional expansion of work from
                 <a
                   href="https://www.mdpi.com/2071-1050/15/4/2984"
                   target="_blank"
@@ -277,7 +261,36 @@
                   OBrien & Mueller
                 </a>
                 which found a large portion of variability in heat and air
-                pollution occurred within neighborhoods in Boston.
+                pollution occurred within neighborhoods in Boston. This pattern
+                indicates that the street-by-street infrastructure differences
+                have a significant effect on the quality of life of people
+                living in the same neighborhood.
+              </p>
+              <p>
+                I joined together parcel data by heavily simplifying street
+                names and joining parcels to the closest match. I used this
+                along with the structures dataset to determine the effective
+                street height width which determines the air flushing rate that
+                effects air pollution exposure. The streets are then used to
+                extract the satellite data on carbon monoxide emissions, land
+                surface temperature, albedo, tree canopy, and impervious surface
+                percentage to examine the drivers of heat and air pollution
+                along with some other factors. The mixed effects models allow me
+                to understand how local and nearby factors affect the livability
+                of each street.
+              </p>
+              <p>
+                The final models and findings are currently in the drafting
+                process, but one thing that is abundantly clear is that tree
+                canopy has an incredible impact on street temperatures at both
+                the local, neighborhood, and town level. However, the
+                disparities could be better modeled and studied with a network
+                of local sensors measuring heat, air pollution, particulate
+                matter, and more. A great example of this is the
+                <a href="https://www.commonsensesproject.org/" target="_blank">
+                  Common SENSES
+                </a>
+                project that BARI also partners with.
               </p>
             </div>
             <!-- End .project-info -->
@@ -330,8 +343,10 @@
                 create a network in ArcGIS with a time cost for traversal based
                 on the average walking speed of a middle-aged adult. I could
                 then use grocery stores and MBTA stations as nodes to create
-                service areas to analyze where the gaps are and how connected
-                grocery stores are to the rapid transit network.
+                service areas. The gaps in service could then be used to
+                apportion census data and approximate the proportion of
+                residents that are out of reach of grocery stores without a
+                faster mode of transportation.
               </p>
               <p>
                 The results were pretty encouraging for the state of Boston food
@@ -391,25 +406,28 @@
                 BlueBikes has been a resounding success of a program. Ridership
                 numbers have increased consistently, even through the pandemic.
                 However, it's clear that BlueBikes is not equally successful
-                across all neighborhoods and segments of Bostonians. While I was
-                examining the BlueBikes data I had the opportunity to talk to a
-                group of high school students primarily from Roxbury. Most of
-                the students had heard of BlueBikes, but none of them knew
-                anyone who used the system. One student remarked that it seemed
-                pointless to rent a bike when they already had a car that could
-                take them anywhere.
+                across all neighborhoods and segments of Bostonians. I had the
+                opportunity to talk to a group of high school students primarily
+                from Roxbury about BlueBikes. Most of the students had heard of
+                BlueBikes, but none of them knew anyone who used the system. One
+                student remarked that it seemed pointless to rent a bike when
+                they already had a car that could take them anywhere.
               </p>
               <p>
                 This led me to investigate which demographics were using
                 BlueBikes. BlueBikes releases anonymized data about trips taken
-                each month. By focusing in on commuters using rush hour spikes,
-                I could find riders' "home" station with some caveats. I then
-                combined BlueBikes ride data with several kinds of Census data
-                to create a linear model.
+                each month. My goal was to focus on commuter behavior as that is
+                one of the best use cases for BlueBikes and it helps me make
+                some assumptions for analysis. To do this, I filtered the data
+                to weekdays and BlueBikes subscribers. Only rides started
+                between 7:00 and 9:59 or rides ended between 4:00 and 6:59 would
+                count towards each station's total ride count. The aim was to
+                only count ridership from riders' "home" station which I would
+                use to create a model with various census demographics.
               </p>
               <p>
                 The resulting model found a significant relationship with
-                Income, GINI (Inequality Measure), and the population proportion
+                income, GINI (Inequality Measure), and the population proportion
                 Ages 18-34. This affirmed BlueBikes' popularity among college
                 students and hinted at an economic barrier to BlueBikes usage.
                 This study was done before the significant price decrease for
