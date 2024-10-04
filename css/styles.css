@@ -469,6 +469,11 @@ footer {
   text-align: center;
 }
 
+#projects h2 {
+  color: #3e5437;
+  margin-bottom: 50px;
+}
+
 .project {
   display: flex;
   max-width: 1200px;
