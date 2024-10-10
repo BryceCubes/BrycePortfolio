@@ -45,8 +45,8 @@ $background-alt: #f2f2f5;
 $border: #dcd9d9;
 
 // Define text colors
-$heading: #374054;
-$text: #74808a;
+$heading: #3e5437;
+$text: #4d4f4f;
 
 /*
     ---------------------
@@ -54,7 +54,7 @@ $text: #74808a;
     ---------------------
 */
 
-@mixin transition($duration: 0.5s, $func: ease, $property: all) {
+@mixin transition($duration: 0.3s, $func: ease, $property: all) {
     transition: #{$duration} #{$func} #{$property};
 }
 
@@ -350,7 +350,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../assets/boston.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
