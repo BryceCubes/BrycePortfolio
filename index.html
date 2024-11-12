@@ -82,7 +82,6 @@
               identifying policy levers to alleviate heat and air pollution in
               the greater Boston area by examining potential causes and effects
               at a regional level.
-
               <br /><br />
 
               I grew up in Chelmsford, Massachusetts and I've been a proud
@@ -217,18 +216,27 @@
             <div id="carousel1" class="project-carousel">
               <div class="mySlides fade">
                 <img
-                  src="./assets/heat-ap-map.jpg"
-                  alt="Map of eastern Massachusetts showing how heat and air pollution intersect"
+                  src="./assets/MultiHazard_geo.jpg"
+                  alt="Map showing bivariate map of heat and air pollution risk"
                 />
               </div>
               <div class="mySlides fade">
-                <img src="./assets/Chelmsford.jpg" alt="TODO" />
+                <img
+                  src="./assets/income_corr.jpg"
+                  alt="Map showing the within-town correlation between heat and air pollution"
+                />
               </div>
               <div class="mySlides fade">
-                <img src="./assets/Chelmsford_Use.jpg" alt="TODO" />
+                <img
+                  src="./assets/Chelsea_heat.jpg"
+                  alt="Map showing the streets of Chelsea and how hot they are"
+                />
               </div>
               <div class="mySlides fade">
-                <img src="./assets/Chelmsford_Heat.jpg" alt="TODO" />
+                <img
+                  src="./assets/Chelsea_Risk.jpg"
+                  alt="Map showing the streets of Chelsea and their individual air pollution risk"
+                />
               </div>
               <!-- Next and previous buttons with Font Awesome -->
               <a class="prev" onclick="plusSlides(-1, 1)">
@@ -249,29 +257,31 @@
             <div class="project-info">
               <h3>MAPC Multi-Hazard Research</h3>
               <p>
-                As climate change continues to progress, our communities need to
-                be ready to handle the heat. BARI wanted to investigate what
-                kinds of policy could be effective at keeping streets cool and
-                clean across the greater Boston area. This research began as a
-                regional expansion of work from
+                Heat and Air Pollution are frequently expressed as separate
+                aggregations up to the census tract or town average. However,
+                there is significant variation within these aggregations, even
+                between adjacent streets. These microspatial inequities were
+                identified within Boston in a paper from
                 <a
                   href="https://www.mdpi.com/2071-1050/15/4/2984"
                   target="_blank"
                 >
-                  OBrien & Mueller
+                  OBrien & Mueller.
                 </a>
-                which found a large portion of variability in heat and air
-                pollution occurred within neighborhoods in Boston. This pattern
-                indicates that the street-by-street infrastructure differences
-                have a significant effect on the quality of life of people
-                living in the same neighborhood.
+                The impetus of this project was to verify how these differences
+                are expressed on a regional scale and use information about
+                nearby infrastructure to identify drivers of heat and air
+                pollution. Preliminary findings indicate that these microspatial
+                inequities remain significant throughout the region, adding
+                additional nuance to how we understand and address environmental
+                hazards across a wider variety of community types.
               </p>
               <p>
                 I joined together parcel data by heavily simplifying street
                 names and joining parcels to the closest match. I used this
                 along with the structures dataset to determine the effective
                 street height width which determines the air flushing rate that
-                effects air pollution exposure. The streets are then used to
+                affects air pollution exposure. The streets are then used to
                 extract the satellite data on carbon monoxide emissions, land
                 surface temperature, albedo, tree canopy, and impervious surface
                 percentage to examine the drivers of heat and air pollution
@@ -281,17 +291,33 @@
               </p>
               <p>
                 The final models and findings are currently in the drafting
-                process, but one thing that is abundantly clear is that tree
-                canopy has an incredible impact on street temperatures at both
-                the local, neighborhood, and town level. However, the
-                disparities could be better modeled and studied with a network
-                of local sensors measuring heat, air pollution, particulate
-                matter, and more. A great example of this is the
-                <a href="https://www.commonsensesproject.org/" target="_blank">
-                  Common SENSES
+                process, but some things are very clear. The microspatial
+                inequities that O'Brien & Mueller found in Boston continue to
+                persist throughout the region. Streets are no longer the clear
+                highest source of variance, but street level infrastructure is
+                the biggest determinant of conditions across scale. Heat and air
+                pollution are also rather strongly correlated together to create
+                overall high hazard areas. Recent studies also show that the
+                combination of these two hazards together significantly
+                increases mortality rates
+
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S0160412023000983"
+                  target="_blank"
+                >
+                  (M. Stafoggia et al, 2023).
                 </a>
-                project that BARI also partners with.
+                The combination of these hazards is also negatively correlated
+                with income, indicating that poorer residents suffer much higher
+                exposure levels than their wealthier counterparts.
               </p>
+              <p>
+                Click the link below to view my iSUPER retreat poster on this
+                topic:
+              </p>
+              <a href="./assets/MultiHazard-Poster.pdf" target="_blank"
+                >iSUPER Poster
+              </a>
             </div>
             <!-- End .project-info -->
           </div>
@@ -375,14 +401,20 @@
               <div class="mySlides fade">
                 <img
                   src="./assets/BlueBikes-hours.jpg"
-                  alt="Graph showing the amount of bluebikes trips that started at each hour of the day by user type"
+                  alt="Bar graph showing the amount of bluebikes trips that started at each hour of the day by user type"
                 />
               </div>
               <div class="mySlides fade">
-                <img src="./assets/BlueBikes-weekday.jpg" alt="TODO" />
+                <img
+                  src="./assets/BlueBikes-weekday.jpg"
+                  alt="Bar graph showing BlueBikes usage by day of the week, separated into Customer and Subscriber segments"
+                />
               </div>
               <div class="mySlides fade">
-                <img src="./assets/BlueBikes-duration.jpg" alt="TODO" />
+                <img
+                  src="./assets/BlueBikes-duration.jpg"
+                  alt="Histogram that shows the most common trip lengths by second, separated into Customer and Subscriber segments"
+                />
               </div>
               <!-- Next and previous buttons with Font Awesome -->
               <a class="prev" onclick="plusSlides(-1, 3)">
