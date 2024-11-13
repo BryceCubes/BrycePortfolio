@@ -286,92 +286,101 @@
           <!-- End .project -->
 
           <!-- View More Projects  -->
-          <a id="view-more-projects" href="#" style="font-size: 22px; text-decoration: none"> View More Projects</a>
+          <a
+            id="view-more-projects"
+            href="#"
+            style="font-size: 22px; text-decoration: none"
+          >
+            View More Projects</a
+          >
 
           <div id="more-projects" class="row">
-          <div id="BlueBikes" class="project shadow-large">
-            <div id="carousel3" class="project-carousel">
-              <div class="mySlides fade">
-                <img
-                  src="./assets/BlueBikes-hours.jpg"
-                  alt="Bar graph showing the amount of bluebikes trips that started at each hour of the day by user type"
-                />
+            <div id="BlueBikes" class="project shadow-large">
+              <div id="carousel3" class="project-carousel">
+                <div class="mySlides fade">
+                  <img
+                    src="./assets/BlueBikes-hours.jpg"
+                    alt="Bar graph showing the amount of bluebikes trips that started at each hour of the day by user type"
+                  />
+                </div>
+                <div class="mySlides fade">
+                  <img
+                    src="./assets/BlueBikes-weekday.jpg"
+                    alt="Bar graph showing BlueBikes usage by day of the week, separated into Customer and Subscriber segments"
+                  />
+                </div>
+                <div class="mySlides fade">
+                  <img
+                    src="./assets/BlueBikes-duration.jpg"
+                    alt="Histogram that shows the most common trip lengths by second, separated into Customer and Subscriber segments"
+                  />
+                </div>
+                <!-- Next and previous buttons with Font Awesome -->
+                <a class="prev" onclick="plusSlides(-1, 3)">
+                  <i class="fa fa-chevron-left"></i>
+                </a>
+                <a class="next" onclick="plusSlides(1, 3)">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+                <!-- The dots/circles within the carousel -->
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1, 3)"></span>
+                  <span class="dot" onclick="currentSlide(2, 3)"></span>
+                  <span class="dot" onclick="currentSlide(3, 3)"></span>
+                </div>
               </div>
-              <div class="mySlides fade">
-                <img
-                  src="./assets/BlueBikes-weekday.jpg"
-                  alt="Bar graph showing BlueBikes usage by day of the week, separated into Customer and Subscriber segments"
-                />
-              </div>
-              <div class="mySlides fade">
-                <img
-                  src="./assets/BlueBikes-duration.jpg"
-                  alt="Histogram that shows the most common trip lengths by second, separated into Customer and Subscriber segments"
-                />
-              </div>
-              <!-- Next and previous buttons with Font Awesome -->
-              <a class="prev" onclick="plusSlides(-1, 3)">
-                <i class="fa fa-chevron-left"></i>
-              </a>
-              <a class="next" onclick="plusSlides(1, 3)">
-                <i class="fa fa-chevron-right"></i>
-              </a>
-              <!-- The dots/circles within the carousel -->
-              <div class="dot-container">
-                <span class="dot" onclick="currentSlide(1, 3)"></span>
-                <span class="dot" onclick="currentSlide(2, 3)"></span>
-                <span class="dot" onclick="currentSlide(3, 3)"></span>
-              </div>
-            </div>
-            <!-- End .project-carousel -->
+              <!-- End .project-carousel -->
 
-            <div class="project-info">
-              <h3>BlueBikes Equity Analysis</h3>
-              <p>
-                BlueBikes has been a resounding success of a program. Ridership
-                numbers have increased consistently, even through the pandemic.
-                However, it's clear that BlueBikes is not equally successful
-                across all neighborhoods and segments of Bostonians. I had the
-                opportunity to talk to a group of high school students primarily
-                from Roxbury about BlueBikes. Most of the students had heard of
-                BlueBikes, but none of them knew anyone who used the system. One
-                student remarked that it seemed pointless to rent a bike when
-                they already had a car that could take them anywhere.
-              </p>
-              <p>
-                This led me to investigate which demographics were using
-                BlueBikes. BlueBikes releases anonymized data about trips taken
-                each month. My goal was to focus on commuter behavior as that is
-                one of the best use cases for BlueBikes and it helps me make
-                some assumptions for analysis. To do this, I filtered the data
-                to weekdays and BlueBikes subscribers. Only rides started
-                between 7:00 and 9:59 or rides ended between 4:00 and 6:59 would
-                count towards each station's total ride count. The aim was to
-                only count ridership from riders' "home" station which I would
-                use to create a model with various census demographics.
-              </p>
-              <p>
-                The resulting model found a significant relationship with
-                income, GINI (Inequality Measure), and the population proportion
-                Ages 18-34. This affirmed BlueBikes' popularity among college
-                students and hinted at an economic barrier to BlueBikes usage.
-                This study was done before the significant price decrease for
-                income-eligible Boston residents, and the network of stations
-                and bike lanes has only continued to expand. I hope these
-                programs will continue to encourage wider adoption.
-              </p>
-              <p>
-                The outcome of this project was a guided lesson intended to
-                demonstrate how to extract insights from open data sources.
-                Check out the lesson here:
-              </p>
-              <a href="./assets/BlueBikes Lesson.pdf" target="_blank"
-                >BlueBikes Guided Lesson</a
-              >
+              <div class="project-info">
+                <h3>BlueBikes Equity Analysis</h3>
+                <p>
+                  BlueBikes has been a resounding success of a program.
+                  Ridership numbers have increased consistently, even through
+                  the pandemic. However, it's clear that BlueBikes is not
+                  equally successful across all neighborhoods and segments of
+                  Bostonians. I had the opportunity to talk to a group of high
+                  school students primarily from Roxbury about BlueBikes. Most
+                  of the students had heard of BlueBikes, but none of them knew
+                  anyone who used the system. One student remarked that it
+                  seemed pointless to rent a bike when they already had a car
+                  that could take them anywhere.
+                </p>
+                <p>
+                  This led me to investigate which demographics were using
+                  BlueBikes. BlueBikes releases anonymized data about trips
+                  taken each month. My goal was to focus on commuter behavior as
+                  that is one of the best use cases for BlueBikes and it helps
+                  me make some assumptions for analysis. To do this, I filtered
+                  the data to weekdays and BlueBikes subscribers. Only rides
+                  started between 7:00 and 9:59 or rides ended between 4:00 and
+                  6:59 would count towards each station's total ride count. The
+                  aim was to only count ridership from riders' "home" station
+                  which I would use to create a model with various census
+                  demographics.
+                </p>
+                <p>
+                  The resulting model found a significant relationship with
+                  income, GINI (Inequality Measure), and the population
+                  proportion Ages 18-34. This affirmed BlueBikes' popularity
+                  among college students and hinted at an economic barrier to
+                  BlueBikes usage. This study was done before the significant
+                  price decrease for income-eligible Boston residents, and the
+                  network of stations and bike lanes has only continued to
+                  expand. I hope these programs will continue to encourage wider
+                  adoption.
+                </p>
+                <p>
+                  The outcome of this project was a guided lesson intended to
+                  demonstrate how to extract insights from open data sources.
+                  Check out the lesson here:
+                </p>
+                <a href="./assets/BlueBikes Lesson.pdf" target="_blank"
+                  >BlueBikes Guided Lesson</a
+                >
+              </div>
+              <!-- End .project-info -->
             </div>
-            <!-- End .project-info -->
-          </div>
-          <!-- End .project -->
+            <!-- End .project -->
 
             <div id="EastieFarm" class="project shadow-large">
               <div id="carousel3" class="project-carousel">
@@ -385,16 +394,29 @@
               <div class="project-info">
                 <h3>Eastie Farm Radius Map</h3>
                 <p>
+                  Community Supported Agriculture (CSA) programs allow people to
+                  connect directly with farmers to subscribe to the harvest of
+                  one or several partnered farms. This model helps farmers with
+                  money upfront at the beginning of the season and helps them
+                  sell some less well-known regional crops. It also brings
+                  people in to share in the risks of farming so bad harvests
+                  from weather or insects will be less likely to put the farm
+                  out of commission.
+                </p>
+                <p>
                   I am a long-time CSA subscriber at my neighborhood's local
                   community organization called
                   <a href="https://eastiefarm.com/" target="_blank"
                     >Eastie Farm.</a
                   >
-                  This organization is a hugely important community asset that
-                  provides free and affordable food for people in need. I love
-                  having access to fresh and local food and learning to cook
-                  with produce that I never used before through their CSA
-                  program which has grown massively over the last few years.
+                  This organization is a hugely important community asset with a
+                  "pick you own price" style of CSA shares allowing more
+                  fortunate residents to support their neighbors. I love having
+                  access to fresh and local food and learning to cook with
+                  produce that I never used before through their CSA program
+                  which has grown massively over the last few years. They also
+                  organize many local events to educate and strengthen community
+                  ties.
                 </p>
                 <p>
                   When a staff member sent out an email asking for people with
