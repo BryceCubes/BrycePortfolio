@@ -161,6 +161,11 @@ footer {
 .top i {
   color: #74808a;
 }
+.top img {
+  color: #74808a; /* SVGs use 'fill' for color in the inline SVG code */
+  width: 1em; /* Match size to your design */
+  height: 1em; /* Match size to your design */
+}
 .social {
   text-align: right;
 }
@@ -174,13 +179,28 @@ footer {
   list-style: none;
 }
 .social a {
-  display: block;
+  display: inline-block;
   color: #74808a;
-  padding: 10px;
+  padding: 10px; /* Padding for all icons */
+  text-decoration: none; /* Clean appearance */
 }
+
+.social a svg {
+  width: 0.9em; /* Match size to font icons */
+  height: 0.9em; /* Match size to font icons */
+  vertical-align: middle; /* Align with other icons */
+  box-sizing: content-box; /* Ensure padding behaves like for <i> */
+  transform: translateY(-2px); /* Nudge upwards */
+}
+
 .social a:hover {
-  color: #6da665;
+  color: #6da665; /* Hover effect for font icons */
 }
+
+.social a:hover svg {
+  fill: #6da665; /* Ensure SVG changes color on hover */
+}
+
 .btn-rounded-white {
   display: inline-block;
   color: #fff;
